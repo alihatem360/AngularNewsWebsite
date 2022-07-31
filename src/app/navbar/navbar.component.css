@@ -1,7 +1,33 @@
-p {
-  color: #150;
-  font-size: 50px;
-  text-align: center;
-  font-family: "Times New Roman", Times, serif;
-  font-weight: bold;
+.logo {
+  width: 86px;
+  height: 23px;
+}
+
+.btnOne {
+  background-color: #f2674d;
+  padding: 12px 29px;
+  color: #fff;
+  border-radius: 6px;
+  position: relative;
+  z-index: 1;
+  font-size: 25px;}
+
+.navbar {
+  padding: 15px 30px;
+  box-shadow: 0px 10px 15px rgba(25, 25, 25, 0.1);
+  background-color: white;
+}
+
+.navbar li {
+  margin-right: 46px;
+  font-size: 29px;
+  font-weight: 300;
+}
+.navbar li a {
+  padding: 9px;
+  color: black;
+}
+
+.navbar li a:hover {
+  color: #8a2b8a !important;
 }
