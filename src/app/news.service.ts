@@ -7,5 +7,10 @@ import { HttpClient } from '@angular/common/http';
 })
 export class NewsService {
 
-  constructor() { }
+  constructor(public _HttpClient: HttpClient) { 
+    getNews(){
+return console.log("ccccc")    }
+  }
 }
+
+

@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-
+import { NewsService } from '../news.service';
 @Component({
   selector: 'app-header',
   templateUrl: './header.component.html',
@@ -7,7 +7,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HeaderComponent implements OnInit {
 
-  constructor() { }
+  allNews = [];
+  constructor( public _NewsService: NewsService) {
+    this.allNews = this._NewsService.getNews();
+  }
+  ngOnInit(): void {
+    throw new Error('Method not implemented.');
+  }
+
+   }
 
   ngOnInit(): void {
   }
