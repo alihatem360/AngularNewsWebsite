@@ -1,19 +1,22 @@
-import { Component, OnInit } from '@angular/core';
-
+import { Component } from '@angular/core';
+import { NewsService } from '../news.service';
 @Component({
   selector: 'app-menu',
   templateUrl: './menu.component.html',
   styleUrls: ['./menu.component.scss'],
 })
-export class MenuComponent implements OnInit {
+export class MenuComponent {
 
-  constructor() {
-    fetch(
-      'https://newsapi.org/v2/top-headlines?country=us&category=business&apiKey=a87bc558cff74856b7aa19c8a73cfb3c'
-    )
-      .then((response) => response.json())
-      .then((data) => console.log(data.articles));
+  alleyptenews: any = [];
+  constructor(public _NewsService: NewsService) {
+    this._NewsService.getNews().subscribe((data) => {
+      this.alleyptenews = data.articles;
+      console.log(this.alleyptenews);
+    });
+
   }
 
-  ngOnInit(): void {}
 }
+
+
+

@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { NewsService } from '../news.service';
+
 @Component({
   selector: 'app-header',
   templateUrl: './header.component.html',
@@ -8,9 +8,9 @@ import { NewsService } from '../news.service';
 
 export class HeaderComponent {
 
-  constructor() {
-  
-  }
+  constructor() { }
 
-  
+
+
+
 }
