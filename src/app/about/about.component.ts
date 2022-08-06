@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-
+import { NewsService } from '../news.service';
 @Component({
   selector: 'app-about',
   templateUrl: './about.component.html',
@@ -7,7 +7,17 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AboutComponent implements OnInit {
 
-  constructor() { }
+  SaudiArabiaNews: any = [];
+
+
+  constructor(public _NewsService: NewsService) {
+    this._NewsService.getSaudiArabiaNews().subscribe((data) => {
+      this.SaudiArabiaNews = data.articles;
+      console.log(this.SaudiArabiaNews);
+    });
+
+
+  }
 
   ngOnInit(): void {
   }

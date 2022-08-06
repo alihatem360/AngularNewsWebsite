@@ -1,15 +1,21 @@
-import { Component, OnInit } from '@angular/core';
-
+import { Component } from '@angular/core';
+import { NewsService } from '../news.service';
 @Component({
   selector: 'app-lol',
   templateUrl: './lol.component.html',
   styleUrls: ['./lol.component.scss']
 })
-export class LolComponent implements OnInit {
+export class LolComponent {
 
-  constructor() { }
+  chinaNews: any = [];
+  constructor(public _NewsService: NewsService) {
+    this._NewsService.getChinaNews().subscribe((data) => {
+      this.chinaNews = data.articles;
+      console.log(this.chinaNews);
+    });
 
-  ngOnInit(): void {
   }
+
+
 
 }

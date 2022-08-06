@@ -17,10 +17,11 @@ import { LolComponent } from './lol/lol.component';
 
 
 const routes: Routes = [
-  { path: 'menu', component: MenuComponent },
-  { path: 'about', component: AboutComponent },
+  { path: 'Egypt', component: MenuComponent },
+  { path: 'Saudi', component: AboutComponent },
   { path: '', component: HeaderComponent },
   { path: 'home', component: HeaderComponent },
+  { path: 'China', component: LolComponent },
 
 ];
 

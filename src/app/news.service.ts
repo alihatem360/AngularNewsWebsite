@@ -13,7 +13,17 @@ export class NewsService {
   getNews(): Observable<any> {
     return this._HttpClient.get('https://newsapi.org/v2/top-headlines?country=eg&apiKey=a87bc558cff74856b7aa19c8a73cfb3c');
   }
-  
+
+  getSaudiArabiaNews(): Observable<any> {
+    return this._HttpClient.get('https://newsapi.org/v2/top-headlines?country=sa&apiKey=a87bc558cff74856b7aa19c8a73cfb3c');
+  }
+
+  getChinaNews(): Observable<any> {
+    return this._HttpClient.get('https://newsapi.org/v2/top-headlines?country=cn&apiKey=a87bc558cff74856b7aa19c8a73cfb3c');
+  }
+
+
+
 }
 
 
