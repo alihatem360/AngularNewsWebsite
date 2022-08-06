@@ -8,6 +8,7 @@ import { NewsService } from '../news.service';
 export class AboutComponent implements OnInit {
 
   SaudiArabiaNews: any = [];
+  myImgUrl: string = '../../assets/unknown.png';
 
 
   constructor(public _NewsService: NewsService) {

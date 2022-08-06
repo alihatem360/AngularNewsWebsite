@@ -11,7 +11,6 @@ export class MenuComponent {
   constructor(public _NewsService: NewsService) {
     this._NewsService.getNews().subscribe((data) => {
       this.alleyptenews = data.articles;
-      console.log(this.alleyptenews);
     });
 
   }
