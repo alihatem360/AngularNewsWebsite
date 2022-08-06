@@ -5,7 +5,7 @@ import { Routes, RouterModule } from '@angular/router';
 import { AppRoutingModule } from './app-routing.module';
 
 // HttpClientModule
-import {HttpClientModule} from '@angular/common/http';
+import { HttpClientModule } from '@angular/common/http';
 
 // Components
 import { ReactiveFormsModule } from '@angular/forms';
@@ -30,6 +30,7 @@ const routes: Routes = [
   { path: 'China', component: LolComponent },
   { path: 'Contactus', component: ContactusComponent },
   { path: 'details/:id', component: DetailsComponent },
+  { path: 'user', loadChildren: () => import('./user/user.module').then(m => m.UserModule) },
 
 ];
 
@@ -57,4 +58,4 @@ const routes: Routes = [
   providers: [],
   bootstrap: [AppComponent],
 })
-export class AppModule {}
+export class AppModule { }
