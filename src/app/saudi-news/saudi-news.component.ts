@@ -1,11 +1,11 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 import { NewsService } from '../news.service';
 @Component({
-  selector: 'app-about',
-  templateUrl: './about.component.html',
-  styleUrls: ['./about.component.scss']
+  selector: 'app-saudi-news',
+  templateUrl: './saudi-news.component.html',
+  styleUrls: ['./saudi-news.component.scss']
 })
-export class AboutComponent implements OnInit {
+export class SaudiNewsComponent {
 
   SaudiArabiaNews: any = [];
   myImgUrl: string = '../../assets/unknown.png';
@@ -19,8 +19,4 @@ export class AboutComponent implements OnInit {
 
 
   }
-
-  ngOnInit(): void {
-  }
-
 }

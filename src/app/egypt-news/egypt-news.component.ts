@@ -1,11 +1,12 @@
 import { Component } from '@angular/core';
 import { NewsService } from '../news.service';
+
 @Component({
-  selector: 'app-menu',
-  templateUrl: './menu.component.html',
-  styleUrls: ['./menu.component.scss'],
+  selector: 'app-egypt-news',
+  templateUrl: './egypt-news.component.html',
+  styleUrls: ['./egypt-news.component.scss']
 })
-export class MenuComponent {
+export class EgyptNewsComponent {
 
   alleyptenews: any = [];
   constructor(public _NewsService: NewsService) {
@@ -16,6 +17,3 @@ export class MenuComponent {
   }
 
 }
-
-
-

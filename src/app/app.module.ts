@@ -13,21 +13,21 @@ import { ReactiveFormsModule } from '@angular/forms';
 import { AppComponent } from './app.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { HeaderComponent } from './header/header.component';
-import { AboutComponent } from './about/about.component';
-import { MenuComponent } from './menu/menu.component';
-import { LolComponent } from './lol/lol.component';
 import { CutPipe } from './cut.pipe';
 import { ContactusComponent } from './contactus/contactus.component';
 import { DetailsComponent } from './details/details.component';
+import { ChinaNewsComponent } from './china-news/china-news.component';
+import { SaudiNewsComponent } from './saudi-news/saudi-news.component';
+import { EgyptNewsComponent } from './egypt-news/egypt-news.component';
 
 
 
 const routes: Routes = [
-  { path: 'Egypt', component: MenuComponent },
-  { path: 'Saudi', component: AboutComponent },
+  { path: 'Egypt', component: EgyptNewsComponent },
+  { path: 'Saudi', component: SaudiNewsComponent },
   { path: '', component: HeaderComponent },
   { path: 'home', component: HeaderComponent },
-  { path: 'China', component: LolComponent },
+  { path: 'China', component: ChinaNewsComponent },
   { path: 'Contactus', component: ContactusComponent },
   { path: 'details/:id', component: DetailsComponent },
   { path: 'user', loadChildren: () => import('./user/user.module').then(m => m.UserModule) },
@@ -40,12 +40,12 @@ const routes: Routes = [
     AppComponent,
     NavbarComponent,
     HeaderComponent,
-    AboutComponent,
-    MenuComponent,
-    LolComponent,
+    ChinaNewsComponent,
     CutPipe,
     ContactusComponent,
     DetailsComponent,
+    SaudiNewsComponent,
+    EgyptNewsComponent,
   ],
   imports: [
     BrowserModule,

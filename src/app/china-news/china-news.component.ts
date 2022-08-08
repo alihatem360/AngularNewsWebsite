@@ -1,12 +1,13 @@
 import { Component } from '@angular/core';
 import { NewsService } from '../news.service';
 @Component({
-  selector: 'app-lol',
-  templateUrl: './lol.component.html',
-  styleUrls: ['./lol.component.scss']
+  selector: 'app-china-news',
+  templateUrl: './china-news.component.html',
+  styleUrls: ['./china-news.component.scss']
 })
-export class LolComponent {
+export class ChinaNewsComponent  {
 
+  
   chinaNews: any = [];
   myImgUrl: string = '../../assets/unknown.png';
 
@@ -17,7 +18,4 @@ export class LolComponent {
     });
 
   }
-
-
-
 }
