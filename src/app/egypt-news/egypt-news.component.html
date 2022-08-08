@@ -9,7 +9,7 @@
                 alt={{item.title}} style="width:100%">
             <div class="card-body">
                 <h4 class="card-title">{{item.title}}</h4>
-                <p class="card-text">{{item.description | cut:50}}...</p>
+                <p class="card-text">{{item.description | slice:0:50}}...</p>
                 <a [routerLink]="['/details',i]" class="btn btn-primary">{{'See more' | uppercase}}</a>
             </div>
 
