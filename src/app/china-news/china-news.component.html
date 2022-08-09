@@ -4,11 +4,11 @@
     <div *ngFor=" let item of chinaNews " class="col-md-6 col-sm-12 col-lg-4">
 
 
-        <div class="card" style="width:400px">
-            <img class="card-img-top" [src]="item.urlToImage !== null ? item.urlToImage : myImgUrl " alt={{item.title}} style="width:100%">
+        <div class="card" >
+            <img class="card-img-top" [src]="item.urlToImage !== null ? item.urlToImage : myImgUrl " alt={{item.title}} >
             <div class="card-body">
                 <h4 class="card-title">{{item.title}}</h4>
-                <p class="card-text">{{item.description}}</p>
+                <p class="card-text">{{item.description  | slice:0:50}}</p>
                 <a href={{item.url}} class="btn btn-primary">See Profile</a>
             </div>
 

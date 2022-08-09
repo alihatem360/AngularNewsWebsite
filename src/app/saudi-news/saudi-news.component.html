@@ -1,11 +1,11 @@
 <p>SaudiArabiaNews works!</p>
 <div class="row">
     <div *ngFor=" let item of SaudiArabiaNews " class="col-lg-4">
-        <div class="card" style="width:400px">
-            <img class="card-img-top" [src]=" item.urlToImage !== null ? item.urlToImage : myImgUrl " style="width:100%">
+        <div class="card">
+            <img class="card-img-top" [src]="item.urlToImage !== null ? item.urlToImage : '../../assets/unknown.png' " >
             <div class="card-body">
                 <h4 class="card-title">{{item.title | uppercase}}</h4>
-                <p class="card-text">{{item.description | cut:100}}...</p>
+                <p class="card-text">{{item.description  | slice:0:50}}...</p>
                 <a href={{item.url}} class="btn btn-primary">See Profile</a>
             </div>
         </div>
