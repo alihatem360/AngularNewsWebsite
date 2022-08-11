@@ -1,6 +1,8 @@
 # Website Demo : https://news-app-amn.pages.dev/
 
-# FirstPro
+# news-websit
+
+![grab-landing-page](./src/assets/grab-landing-page.gif)
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 14.1.0.
 
