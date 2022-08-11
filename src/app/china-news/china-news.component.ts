@@ -9,7 +9,7 @@ export class ChinaNewsComponent  {
 
   
   chinaNews: any = [];
-  myImgUrl: string = '../../assets/unknown.png';
+  myImgUrl: string = '../../assets/unknown.svg';
 
   constructor(public _NewsService: NewsService) {
     this._NewsService.getChinaNews().subscribe((data) => {

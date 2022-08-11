@@ -2,7 +2,7 @@
 <div class="row">
     <div *ngFor=" let item of SaudiArabiaNews " class="col-lg-4">
         <div class="card">
-            <img class="card-img-top" [src]="item.urlToImage !== null ? item.urlToImage : '../../assets/unknown.png' " >
+            <img class="card-img-top" [src]="item.urlToImage !== null ? item.urlToImage : '../../assets/unknown.svg' " >
             <div class="card-body">
                 <h4 class="card-title">{{item.title | uppercase}}</h4>
                 <p class="card-text">{{item.description  | slice:0:50}}...</p>
