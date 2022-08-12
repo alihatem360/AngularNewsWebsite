@@ -19,7 +19,7 @@ import { DetailsComponent } from './details/details.component';
 import { ChinaNewsComponent } from './china-news/china-news.component';
 import { SaudiNewsComponent } from './saudi-news/saudi-news.component';
 import { EgyptNewsComponent } from './egypt-news/egypt-news.component';
-
+import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 
 
 const routes: Routes = [
@@ -31,6 +31,7 @@ const routes: Routes = [
   { path: 'Contactus', component: ContactusComponent },
   { path: 'details/:id', component: DetailsComponent },
   { path: 'user', loadChildren: () => import('./user/user.module').then(m => m.UserModule) },
+  { path: '**', component: PageNotFoundComponent }
 
 ];
 
@@ -46,6 +47,7 @@ const routes: Routes = [
     DetailsComponent,
     SaudiNewsComponent,
     EgyptNewsComponent,
+    PageNotFoundComponent,
   ],
   imports: [
     BrowserModule,
