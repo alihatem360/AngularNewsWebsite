@@ -2,7 +2,7 @@
 
 # news-websit
 
-![grab-landing-page](./src/assets/grab-landing-page.gif)
+![grab-landing-page](https://github.com/alihatem360/news-website/blob/master/src/assets/grab-landing-page.gif)
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 14.1.0.
 
